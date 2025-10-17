@@ -1,100 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Abil & Ama — Cerita Cinta</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cerita Abil & Ama 💕</title>
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#ef4444;--muted:#94a3b8}
-    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial;background:linear-gradient(180deg,#071028,#0b1220);color:#e6eef8;padding:24px}
-    .wrap{max-width:900px;margin:0 auto}
-    header{display:flex;align-items:center;gap:14px}
-    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#fb7185,#ef4444);display:flex;align-items:center;justify-content:center;font-weight:800}
-    h1{margin:0;font-size:32px;color:#ffd6d6}
-    .tag{color:var(--muted);margin-top:6px}
-    .hero{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:20px}
-    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
-    .heart{font-size:48px;color:var(--accent);margin:8px 0}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,#fb7185,#ef4444);color:#071025;font-weight:700;text-decoration:none}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
-    .small{font-size:14px;color:var(--muted)}
-    footer{margin-top:20px;color:var(--muted);font-size:13px}
-    @media(max-width:860px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: fadeIn 2s ease;
+    }
+
+    p {
+      font-size: 1.3em;
+      animation: fadeIn 3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .love {
+      position: absolute;
+      color: #ffebf0;
+      font-size: 20px;
+      animation: floatUp 4s linear infinite;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-800px) scale(1.5); opacity: 0; }
+    }
+
+    .letter {
+      background: rgba(255,255,255,0.15);
+      border-radius: 15px;
+      padding: 25px;
+      margin-top: 40px;
+      width: 80%;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.2em;
+      display: none;
+      animation: fadeIn 2s ease;
+    }
+
+    button {
+      background: #fff;
+      color: #ff6688;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 25px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 25px;
+    }
+
+    button:hover {
+      background: #ffe3ea;
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="logo">A</div>
-      <div>
-        <h1>Abil ♥ Ama</h1>
-        <div class="tag">Sebuah website kecil buat cerita cinta yang tulus dan kocak</div>
-      </div>
-    </header>
+  <h1>Hai Ama 💖</h1>
+  <p>Nama aku Abil, dan aku cuma mau bilang...</p>
+  <p><strong>AKU SAYANG SAMA KAMU 😘</strong></p>
 
-    <main style="margin-top:18px">
-      <section class="hero">
-        <div class="card">
-          <div style="font-weight:800;font-size:20px">Hai, aku Abil.</div>
-          <div class="heart">♥</div>
-          <p class="small">Ini tempat aku ngungkapin apa yang kadang susah diomongin ke telinga: aku sayang banget sama Ama. Bukan sekadar kata, tapi kombinasi perhatian, candaan receh, dan momen-momen kecil yang bikin hari jadi hangat.</p>
+  <button onclick="showLetter()">Buka Surat dari Abil 💌</button>
 
-          <div style="margin-top:12px">
-            <div style="font-weight:700">Kenapa Ama?</div>
-            <ul class="small">
-              <li>Ama selalu dengerin cerita basi aku.</li>
-              <li>Ama punya senyum yang bisa ngilangin keselku.</li>
-              <li>Ama support semua mimpi-mimpi kecil aku.</li>
-            </ul>
-          </div>
-
-          <div style="margin-top:12px">
-            <a class="btn" href="#bukti">Lihat Bukti Cinta</a>
-          </div>
-        </div>
-
-        <aside class="card" style="text-align:center">
-          <div style="font-weight:800">Foto Kenangan</div>
-          <div class="small" style="margin-top:8px">(Ganti foto ini pakai foto kalian biar lebih personal)</div>
-          <div style="margin-top:10px;background:linear-gradient(180deg,#111827,#0b1220);padding:12px;border-radius:10px">📷 Placeholder Foto</div>
-        </aside>
-      </section>
-
-      <section id="bukti" style="margin-top:18px">
-        <div class="card">
-          <h2 style="margin:0">Bukti Cinta</h2>
-          <div class="grid">
-            <div>
-              <p class="small"><b>Pesan manis:</b> "Makan dulu ya, sayang" — simple, tapi berarti.</p>
-            </div>
-            <div>
-              <p class="small"><b>Waktu terbaik:</b> Ngobrol sampe jam malem sambil minum kopi sachet.</p>
-            </div>
-            <div>
-              <p class="small"><b>Janji-janji:</b> Aku bakal jagain Ama, dengerin, dan jadi partner receh tapi setia.</p>
-            </div>
-            <div>
-              <p class="small"><b>Testimoni:</b> Temen-temen bilang, "Pasangan ini emang cocok, model relationship goals versi santuy."</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section style="margin-top:18px">
-        <div class="card">
-          <h3 style="margin:0">Surat Untuk Ama</h3>
-          <p class="small" style="margin-top:8px">Ama, kalo lo baca ini: makasih udah jadi kamu. Aku sayang kamu — nggak perlu kata-kata puitis, cukup buktiin dengan hadir dan perhatian. Peluk virtual dulu ya. 🤍</p>
-        </div>
-      </section>
-
-    </main>
-
-    <footer>
-      © <span id="year"></span> Abil & Ama — Dibuat dengan niat baik dan sedikit romansa.
-    </footer>
+  <div class="letter" id="loveLetter">
+    <p>
+      Ama, kamu tuh alasan kenapa tiap hari aku senyum sendiri.  
+      Dunia jadi lebih indah semenjak ada kamu.  
+      Pokoknya aku bakal terus sayang kamu, gak peduli seberapa lama waktu berjalan ❤️  
+    </p>
   </div>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <audio id="bgMusic" autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/16/audio_6842e9b01e.mp3?filename=sweet-love-10986.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // fungsi buat efek love-love beterbangan
+    function createLove() {
+      const love = document.createElement('div');
+      love.classList.add('love');
+      love.innerText = '💗';
+      love.style.left = Math.random() * 100 + 'vw';
+      love.style.animationDuration = Math.random() * 3 + 2 + 's';
+      document.body.appendChild(love);
+      setTimeout(() => love.remove(), 4000);
+    }
+    setInterval(createLove, 300);
+
+    // fungsi buat munculin surat
+    function showLetter() {
+      const letter = document.getElementById("loveLetter");
+      letter.style.display = "block";
+    }
+  </script>
 </body>
 </html>
